@@ -28,22 +28,26 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
     ```cmd
     open -a TextEdit ~/.zshrc
     ```
-    + Add thêm script bên dưới vào **~/.zshrc** để chọn themes mặc định. Lưu ý **jandedobbeleer.omp.json** là tên themes
+    + Add thêm script bên dưới vào **~/.zshrc** để chọn themes mặc định. Lưu ý **jandedobbeleer.omp.json** là tên themes có thể tuỳ biến
     ```cmd
     eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/jandedobbeleer.omp.json)"
     ```
 - Các bạn có thể lựa chọn themes mà mình thích [ở đây](https://ohmyposh.dev/docs/themes)
 - Để thay themes nào thì các bạn lấy tên của themes đó, rồi thay vào script ở file  **~/.zshrc** cùng với tên mới là được. Ví dụ mình muốn sử dụng themes aliens(aliens.omp.json) thì script sẽ là:
+
 ```cmd
  eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/aliens.omp.json)"
 ```
-thì
 
 - Sau khi cài thành công thì sẽ có nó sẽ `bị lỗi font như thế này. Chọn lại font mặc định của iTerm2 sang font tải ở trên là ok!
 ![Alt text](image-1.png)
+
 - Setup font FiraCode Nert Font cho iTerm2 (iTerm2 -> Setting -> chọn tab Profiles -> chọn tab Text)
+<br/>
 ![Alt text](image-2.png)
+
 - Setup font VS Code. Open setting.json bằng cách nhấn(command + shift + P) -> search setting.json rồi Enter. Thêm script này vào:
+
 ```cmd
 "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
 ```
@@ -54,7 +58,9 @@ thì
 ![Alt text](image-4.png)
 
 5. Custom Themes
-
+- Có thể tự cấu hình file theme(mytheme.omp.json) rồi bỏ vào trong thư mực themes của oh-my-posh. Config syntax xem [tại đây](https://ohmyposh.dev/docs/configuration/general)
 ```
 cd /opt/homebrew/Cellar/oh-my-posh/19.2.1/themes
 ```
+
+- My Themes(themes/customize.omp.json)
