@@ -1,7 +1,6 @@
 # Getting Started
-<video loop  width="500" height="600" autoplay muted>
-  <source src="video.mp4" type="video/mp4">
-</video>
+
+![alt text](video.gif)
 
 1. Install extension Custom CSS and JS Loader
 2. Add to `settings.json`:
