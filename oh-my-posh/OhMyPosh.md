@@ -39,7 +39,6 @@ brew install jandedobbeleer/oh-my-posh/oh-my-posh
  eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/aliens.omp.json)"
 ```
 
-- Sau khi cài thành công thì sẽ có nó sẽ `bị lỗi font như thế này. Chọn lại font mặc định của iTerm2 sang font tải ở trên là ok!
 ![Alt text](image-1.png)
 
 - Setup font FiraCode Nert Font cho iTerm2 (iTerm2 -> Setting -> chọn tab Profiles -> chọn tab Text)
@@ -64,3 +63,5 @@ cd /opt/homebrew/Cellar/oh-my-posh/19.2.1/themes
 ```
 
 - My Themes(themes/customize.omp.json)
+
+![Alt text](image-5.png)
