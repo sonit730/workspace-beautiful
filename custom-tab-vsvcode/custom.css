@@ -9,6 +9,20 @@
     height: calc(100% - 3px) !important;
     background-color: transparent !important;
   }
+
+/* 🔧 Fix:
+   Ensure .tab-border-bottom-container is displayed correctly
+   when its parent tab has the `active` class.
+   Previously, a long selector failed on the "Dark (Visual Studio)" theme.
+   Now simplified to `div.active > .tab-border-bottom-container` for cross-theme support.
+*/
+div.active > .tab-border-bottom-container {
+  display: block !important;
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+}
+
 .tab-border-bottom-container:before {
     content: "";
     width: 500px;
